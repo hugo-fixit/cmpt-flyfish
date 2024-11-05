@@ -74,6 +74,16 @@ In order to Inject the partial `cmpt-flyfish.html` into the `custom-assets` thro
     postFooterAfter = []
 ```
 
+Configuration of the Fly Fish theme color and enable animation:
+
+```toml
+[params]
+  [params.flyfish]
+    enable = true
+    light = "rgb(0 119 190 / 10%)"
+    dark = "rgb(255 255 255 / 10%)"
+```
+
 ## References
 
 - [Develop Theme Components | FixIt](https://fixit.lruihao.cn/contributing/components/)

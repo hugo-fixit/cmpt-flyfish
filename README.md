@@ -74,6 +74,16 @@ theme = ["FixIt", "cmpt-flyfish"]
     postFooterAfter = []
 ```
 
+配置小鱼主题色，并启用动画：
+
+```toml
+[params]
+  [params.flyfish]
+    enable = true
+    light = "rgb(0 119 190 / 10%)"
+    dark = "rgb(255 255 255 / 10%)"
+```
+
 ## 参考
 
 - [开发主题组件 | FixIt](https://fixit.lruihao.cn/contributing/components/)
