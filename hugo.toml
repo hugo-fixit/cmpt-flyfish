@@ -1,3 +1,9 @@
+[params]
+  [params.flyfish]
+    enable = true
+    light = "#e6e5f8"
+    dark = "rgb(255 255 255 / 10%)"
+
 [module]
   [module.hugoVersion]
     extended = true

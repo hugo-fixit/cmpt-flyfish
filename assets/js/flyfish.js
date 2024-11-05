@@ -1,3 +1,5 @@
+import params from '@params';
+
 /**
  * 源码来自互联网，作者不详
  * @modified by Lruihao 2024-05-21 移除依赖 jQuery
@@ -178,9 +180,9 @@ const RENDERER = {
       self.context.clearRect(0, 0, self.width, self.height);
       // 这里利用 FixIt 主题的 isDark 属性来判断是否是暗色主题
       if (fixit.isDark) {
-        self.context.fillStyle = "rgb(255 255 255 / 10%)";
+        self.context.fillStyle = params.dark || 'rgb(255 255 255 / 10%)';
       } else {
-        self.context.fillStyle = "#e6e5f8";
+        self.context.fillStyle = params.dark.light || '#e6e5f8';
       }
 
       for (let i = 0, count = self.fishes.length; i < count; i++) {

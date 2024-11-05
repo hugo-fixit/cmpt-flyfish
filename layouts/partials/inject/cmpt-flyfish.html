@@ -1,0 +1,14 @@
+{{- /* flyfish.min.js */ -}}
+{{- $fingerprint := .Scratch.Get "fingerprint" -}}
+{{- $flyfish := .Site.Params.flyfish -}}
+{{- if $flyfish.enable -}}
+  {{- $options := dict "targetPath" "js/flyfish.min.js" "minify" hugo.IsProduction -}}
+  {{- $options = dict 
+    "light" $flyfish.light
+    "dark" $flyfish.dark
+  | dict "params" | merge $options -}}
+  {{- if not hugo.IsProduction -}}
+    {{- $options = dict "sourceMap" "inline" | merge $options -}}
+  {{- end -}}
+  {{- dict "Source" "js/flyfish.js" "Build" $options "Fingerprint" $fingerprint "Defer" true | dict "Scratch" .Scratch "Data" | partial "scratch/script.html" -}}
+{{- end -}}
