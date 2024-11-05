@@ -1,7 +1,7 @@
 [params]
   [params.flyfish]
-    enable = true
-    light = "#e6e5f8"
+    enable = false
+    light = "rgb(0 119 190 / 10%)"
     dark = "rgb(255 255 255 / 10%)"
 
 [module]

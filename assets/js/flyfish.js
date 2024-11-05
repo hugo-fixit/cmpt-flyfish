@@ -182,7 +182,7 @@ const RENDERER = {
       if (fixit.isDark) {
         self.context.fillStyle = params.dark || 'rgb(255 255 255 / 10%)';
       } else {
-        self.context.fillStyle = params.dark.light || '#e6e5f8';
+        self.context.fillStyle = params.dark.light || 'rgb(0 119 190 / 10%)';
       }
 
       for (let i = 0, count = self.fishes.length; i < count; i++) {
