@@ -41,7 +41,7 @@ hugo mod tidy
 
 ### Install as Git Submodule
 
-Clone [FixIt](https://github.com/hugo-fixit) and this git repository into your theme folder and add it as submodules of your website directory.
+Clone [FixIt](https://github.com/hugo-fixit/FixIt) and this git repository into your theme folder and add it as submodules of your website directory.
 
 ```bash
 git submodule add https://github.com/hugo-fixit/FixIt.git themes/FixIt
@@ -61,17 +61,9 @@ In order to Inject the partial `cmpt-flyfish.html` into the `custom-assets` thro
 ```toml
 [params]
   [params.customPartials]
-    head = []
-    profile = []
-    aside = []
-    comment = []
-    footer = []
-    widgets = []
-    assets = [
-      "inject/cmpt-flyfish.html",
-    ]
-    postFooterBefore = []
-    postFooterAfter = []
+    # ... other partials
+    assets = [ "inject/cmpt-flyfish.html" ]
+    # ... other partials
 ```
 
 Configuration of the Fly Fish theme color and enable animation:
